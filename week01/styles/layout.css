@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #3c3d3e;
+    /* deep navy blue */
+    --secondary-color: #79eae4d4;
+    /* warm yellow */
+    --accent1-color: black;
+    /* dark slate blue */
+    --accent2-color: rgba(171, 110, 45, 0.726);
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color:#fff;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700px;
+}
+
+nav {
+    gap: 1.5rem;
+    list-style: none;
+    margin: 12px;
+}
+
+nav ul{
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+main{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header, footer {
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0px;
+    background-color: var(--primary-color);
+}

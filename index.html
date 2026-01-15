@@ -4,11 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals – Nwakwuruibe Bright</title>
+    <meta name="description"
+        content="This is the Home page for Nwakwuruibe Bright's WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Nwakwuruibe Bright">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:ital@0;1&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - BRIGHT</h1>
+    <header>
+        <h1><span id="course-title">WDD 131: Dynamic Web Fundamentals</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/bright-nwakwuruibe-mnse-mnimeche-miaeng-a8766b17b/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Projects</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/19?lang=eng&id=p26#p26">Scripture</a>
+            <a href="Final-project.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Nwakwuruibe Bright Chuka</h2>
+
+        <div class="parent-grid">
+            <section class="card">
+                <h3>About Me</h3>
+                <!-- personal information -->
+                <div class="personal-info">
+                    <img src="images/profile.webp" alt="Nwakwuruibe Bright" width="150px">
+
+                    <p>My name is Nwakwuruibe Bright and I am from Nigeria. I love studying, learning about
+                        technology, soccer and traveling.
+                    </p>
+                    <p>I am currently studying Web Design and Development at BYU College, Idaho.</p>
+                    <p>It all started by sheer curiosity but now I am fueled by passion of using technology to solve
+                        real-world problems and am currently preparing for a career as a Full-Stack Developer.</p>
+                    <p>I am excited about my career trajectory and look forward to shaping the future of digital
+                        experiences as a versatile
+                        professional in the rapidly expanding tech landscape.
+                    </p>
+                </div>
+
+                <h4>Lagos, Nigeria</h4>
+                <!-- country information -->
+                <div class="country-info">
+                    <div class="nigeria-flag">
+                        <img src="images/nigeria-flag.jpg" alt="Nigeria flag" width="150px">
+                        <p>Official flag of Nigeria</p>
+                    </div>
+                    <p>Nigeria, officially the Federal Republic of Nigeria, is West Africa's most populous nation, known
+                        for its diverse
+                        cultures, large economy (Africa's largest), and rich natural resources, especially oil; it's a
+                        federal republic with
+                        capital Abuja, major city Lagos, and English as the official language, balancing strong cultural
+                        traditions with modern
+                        growth.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <h3>Web Dev Resources</h3>
+                <div class="list">
+                    <ul>
+                        <li><a href="https://dev.to">Dev.to Community</a></li>
+                        <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                        <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                        <li><a href="https://www.udemy.com">Udemy</a></li>
+                        <li><a href="https://picsum.photos">Lorem Picsum Image placeholder</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nwakwuruibe Bright | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 
 </html>

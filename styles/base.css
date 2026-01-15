@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #1f4e79;
+    --secondary-color: #f4f4f4;
+    --accent-color: #ffb703;
+    --text-color: #222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem 0 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+#course-title {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* NAVIGATION SECTION */
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+    background-color: #000;
+}
+
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem
+}
+
+h2 {
+    margin: 0 auto 20px;
+}
+
+.parent-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    /* For grid-template-columns, I can adopt the RAM technique - repeat(auto-fit, minmax(280px, 1fr)) */
+}
+
+/*CARDS*/
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.card .list {
+    margin: 1rem;
+    margin-top: 8rem;
+}
+
+/*HEADERS*/
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+h3 {
+    background-color: #1f4e79;
+    color: var(--secondary-color);
+}
+
+h4 {
+    border-bottom: 1px solid var(--text-color) ;
+}
+
+/*PERSONAL INFO*/
+
+.personal-info {
+    padding: 1px;
+    margin: 2px;
+}
+
+.personal-info img {
+    display: block;
+    float: right;
+    margin: 0 1rem 0;
+}
+
+/*COUNTRY INFO*/
+.country-info {
+    padding: 1px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.nigeria-flag img {
+    padding: 5px;
+    margin: 0 2rem 0 0;
+}
+
+.nigeria-flag p {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
