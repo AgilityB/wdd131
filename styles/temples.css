@@ -33,6 +33,9 @@ header p {
     background: none;
     color: var(--heading-text-color);
     cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
