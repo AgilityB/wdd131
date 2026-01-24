@@ -1,0 +1,76 @@
+    /*Setting up the CSS variable in the :root pseudo-class */
+    :root {
+        --table-border: 1px solid #777;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Acme', sans-serif;
+    }
+
+    h1 {
+        margin: 0.75rem;
+    }
+
+    main {
+        margin: 0.5rem;
+        border: 1px solid rgb(0 0 0 / 0.1);
+        padding: 0.5rem;
+        background-color: #eee;
+    }
+
+    p {
+        margin: 1rem;
+    }
+
+    /*Applying the variable to borders to prevent doubling */
+    .datatable {
+        width: 200px;
+        margin-top: 2rem;
+        border-top: var(--table-border);
+        border-left: var(--table-border);
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col {
+        padding: 0.5rem;
+        border-bottom: var(--table-border);
+        border-right: var(--table-border);
+    }
+
+    /* Using last-child for the darker gray background */
+    .row:last-child {
+        background-color: #bbbbbb;
+    }
+
+    .col:nth-child(even) {
+        border-right: var(--table-border);
+    }
+
+    /* Updating anchor tags for specific states */
+    a:visited,
+    a:active {
+        color: navy;
+    }
+
+    a:hover {
+        color: purple;
+    }
+
+

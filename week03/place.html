@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page - Nwakwuruibe Bright</title> 
+    <meta name="author" content="Nwakwuruibe Bright">
+    <meta name="description" content="Country Page - responsive web pages with JavaScript language syntax">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:1000px)" srcset="images/nigeria-large.webp">
+                <source media="(min-width: 500px)" srcset="images/nigeria-medium.webp">
+                <img src="images/nigeria-small.webp" alt="Zuma Rock in Abuja, Nigeria" sizes="100vw">
+            </picture>
+        </div>
+        
+    
+        <section class="info weather">
+            <div class="flex">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather icon" width="60" height="60" class="mobile-icon">
+            </div>
+                <p><strong>Temperature:</strong> 34°C</p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Precipitation:</strong> 10%</p>
+                <p><strong>Humidity:</strong> 53%</p>
+                <p><strong>Wind:</strong> 5 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+</p>
+
+        </section>
+        
+        <section class="info data">
+            <div class="dataheading">
+                <h2>Data</h2>
+            </div>                
+                <p><strong>Population:</strong> ~239.4 million</p>
+                <p><strong>Capital:</strong> Abuja</p>
+                <p><strong>Land Area:</strong> 923,768 sq km</p>
+                <p><strong>Official Language:</strong> English (over 525 languages spoken)</p>
+                <p><strong>Timezone:</strong> GMT+1</p>
+                <p><strong>Calling code:</strong> +234</p>
+        </section>
+            
+     
+
+
+   
+    </main>
+   
+        
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nwakwuruibe Bright | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html> 
