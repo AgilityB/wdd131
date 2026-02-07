@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamental- Web Forms">
+    <meta name="author" content="Nwakwuruibe Bright">
+    
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-medium.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Selection -->
+            <div class="form-section">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected> Select a product </option>
+                </select>
+            </div>
+            
+
+                <label>Overall Rating <span class="required"></span></label>
+                    <div class="rating-container">
+                    <label><input type="radio" id="rating1" name="rating" value="1" required> 1</label>
+                    <label><input type="radio" id="rating2" name="rating" value="2" required> 2</label>
+                    <label><input type="radio" id="rating3" name="rating" value="3" required> 3</label>
+                    <label><input type="radio" id="rating4" name="rating" value="4" required> 4</label>
+                    <label><input type="radio" id="rating5" name="rating" value="5" required> 5</label>
+                </div>
+
+                <div class="form-section">
+                    <label for="install-date">Date of Installation</label>
+                    <input type="date" id="install-date" name="install-date" required>
+                </div>
+
+            
+                <legend><strong>Which features did you find useful in the product? (Check all that apply)</strong></legend>
+                <label><input type="checkbox" id="feature-durability" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" id="feature-design" name="features" value="design"> Design</label>
+                <label><input type="checkbox" id="feature-ease" name="features" value="ease"> Ease of Use</label>
+                <label><input type="checkbox" id="feature-performance" name="features" value="performance"> High Performance</label>
+        
+
+            <div class="form-section">
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4" placeholder="Share your experience..."></textarea>
+            </div>
+            <div class="form-section">
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+<!-- FOOTER HERE -->  
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nwakwuruibe Bright | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+
+</html>
