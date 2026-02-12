@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation li a {
+        display: block;
+    }
+
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    .hero {
+        padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

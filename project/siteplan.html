@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | TaskFlow - Nwakwuruibe Bright</title>
+
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamental-Final project site plan web page. A productivity and task-management platform designed for students and small teams to organize tasks and collaborate efficiently.">
+    <meta name="author" content="Nwakwuruibe Bright">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/taskflow.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="branding">
+            <h1>TaskFlow</h1>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h2>Stay Organized. Stay Productive.</h2>
+            <p>
+                TaskFlow helps students and small teams manage tasks, track progress,
+                and collaborate efficiently—all in one place.
+            </p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features">
+            <h2>Features</h2>
+
+            <div class="features-grid">
+                <article>
+                    <h3>Task Organization</h3>
+                    <p>Create, organize, and prioritize tasks with ease.</p>
+                </article>
+
+                <article>
+                    <h3>Team Collaboration</h3>
+                    <p>Work together with shared tasks and progress tracking.</p>
+                </article>
+
+                <article>
+                    <h3>Productivity Insights</h3>
+                    <p>Visualize progress and stay motivated with simple analytics.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS SECTION -->
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Create your tasks</li>
+                <li>Organize and prioritize</li>
+                <li>Track progress and collaborate</li>
+            </ol>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="pricing">
+            <h2>Pricing</h2>
+
+            <div class="pricing-cards">
+                <article>
+                    <h3>Free</h3>
+                    <p>Basic task management for individuals.</p>
+                </article>
+
+                <article>
+                    <h3>Team</h3>
+                    <p>Collaboration tools for small teams.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT / SIGN-UP SECTION -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> TaskFlow | All Rights Reserved</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
