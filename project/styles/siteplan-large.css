@@ -1,36 +1,38 @@
+/* ===============================
+   TASKFLOW DESKTOP STYLES
+================================== */
+
 @media (min-width: 768px) {
 
-    #menu {
-        display: none;
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .navigation {
-        display: flex;
-        gap: 2rem;
+    .site-nav {
+        flex-wrap: nowrap;
     }
 
-    .navigation li a {
-        display: block;
+    .colors {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    header {
-        padding: 1.5rem 3rem;
+    .type-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero {
-        padding: 6rem 2rem;
+    .wireframe-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .features-grid {
+    .wf-cards.three {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .pricing-cards {
-        grid-template-columns: repeat(2, 1fr);
+    .wf-hero-split {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 
 }

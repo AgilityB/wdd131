@@ -3,117 +3,217 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>TaskFlow Site Plan | WDD 131</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan | TaskFlow - Nwakwuruibe Bright</title>
+    <meta name="description" content="TaskFlow Site Plan for WDD 131 Final Project">
+    <meta name="author" content="Your Name">
 
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamental-Final project site plan web page. A productivity and task-management platform designed for students and small teams to organize tasks and collaborate efficiently.">
-    <meta name="author" content="Nwakwuruibe Bright">
-    <link rel="stylesheet" href="styles/siteplan-large.css">
+
     <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/taskflow.js" defer></script>
+    <link rel="stylesheet" href="styles/siteplan-large.css">
 </head>
 
 <body>
-    <!-- HEADER / NAVIGATION -->
-    <header>
-        <div class="branding">
-            <h1>TaskFlow</h1>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div>
+                    <h1>TaskFlow</h1>
+                    <p class="subtitle">WDD 131 Final Project Site Plan</p>
+                </div>
+            </div>
+
+            <nav class="site-nav">
+                <a href="#purpose">Purpose</a>
+                <a href="#scenarios">Scenarios</a>
+                <a href="#branding">Branding</a>
+                <a href="#wireframes">Wireframes</a>
+            </nav>
         </div>
-
-        <button id="menu" aria-label="Open navigation menu"></button>
-
-        <nav>
-            <ul class="navigation">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <h2>Stay Organized. Stay Productive.</h2>
+    <main class="container">
+
+        <!-- SITE PURPOSE -->
+        <section class="card" id="purpose">
+            <h2>Site Purpose</h2>
             <p>
-                TaskFlow helps students and small teams manage tasks, track progress,
-                and collaborate efficiently—all in one place.
+                TaskFlow is a productivity and task-management platform designed for students and small teams.
+                The website introduces users to TaskFlow’s features, benefits, and collaborative tools that help
+                manage assignments, projects, and deadlines efficiently.
             </p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <p>
+                The website will demonstrate responsive design, JavaScript interactivity,
+                and modern web development best practices through dynamic task previews,
+                interactive navigation, and mobile-friendly layouts.
+            </p>
         </section>
 
-        <!-- FEATURES SECTION -->
-        <section id="features">
-            <h2>Features</h2>
+        <!-- SCENARIOS -->
+        <section class="card" id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>
+                    How can I organize my assignments and deadlines in one simple dashboard?
+                </li>
+                <li>
+                    Can my small team collaborate and track shared tasks without using complicated software?
+                </li>
+                <li>
+                    Is there a productivity tool designed specifically for students instead of large corporations?
+                </li>
+            </ul>
+        </section>
 
-            <div class="features-grid">
-                <article>
-                    <h3>Task Organization</h3>
-                    <p>Create, organize, and prioritize tasks with ease.</p>
-                </article>
+        <!-- BRANDING -->
+        <section class="card" id="branding">
 
-                <article>
-                    <h3>Team Collaboration</h3>
-                    <p>Work together with shared tasks and progress tracking.</p>
-                </article>
+            <h2>Color Scheme</h2>
+            <p>The color palette reflects a modern SaaS productivity platform.</p>
 
-                <article>
-                    <h3>Productivity Insights</h3>
-                    <p>Visualize progress and stay motivated with simple analytics.</p>
-                </article>
+            <div class="colors">
+                <div class="color">
+                    <div class="chip primary"></div>
+                    <div>
+                        <p class="color-title">Primary</p>
+                        <p>#4F0C8E – Deep Purple (Headings, buttons)</p>
+                    </div>
+                </div>
+
+                <div class="color">
+                    <div class="chip secondary"></div>
+                    <div>
+                        <p class="color-title">Secondary</p>
+                        <p>#F5F5F5 – Light Gray (Background)</p>
+                    </div>
+                </div>
+
+                <div class="color">
+                    <div class="chip accent"></div>
+                    <div>
+                        <p class="color-title">Accent</p>
+                        <p>#FFC857 – Highlight, hover effects</p>
+                    </div>
+                </div>
+
+                <div class="color">
+                    <div class="chip text"></div>
+                    <div>
+                        <p class="color-title">Text</p>
+                        <p>#1F2937 – Body text</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Color Scheme Used on This Document</h3>
+            <p>
+                This document applies the primary color to headings and navigation accents.
+                The light gray background creates visual contrast, while the accent color
+                highlights important interactive elements.
+            </p>
+
+            <h2>Typography Used on Document</h2>
+            <div class="type-grid">
+                <div class="type-sample">
+                    <h3 class="font-heading">Headings: Montserrat</h3>
+                    <p class="font-heading">
+                        TaskFlow — Organize Smarter. Work Better.
+                    </p>
+                </div>
+
+                <div class="type-sample">
+                    <h3 class="font-body">Body: Roboto</h3>
+                    <p class="font-body">
+                        Roboto is used for readable paragraphs, UI descriptions, and supporting content.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <!-- HOW IT WORKS SECTION -->
-        <section id="how-it-works">
-            <h2>How It Works</h2>
-            <ol>
-                <li>Create your tasks</li>
-                <li>Organize and prioritize</li>
-                <li>Track progress and collaborate</li>
-            </ol>
-        </section>
+        <!-- WIREFRAMES -->
+        <section class="card" id="wireframes">
+            <h2>Wireframes</h2>
+            <p>
+                The following sketches represent the TaskFlow home page layout in both mobile
+                and desktop views.
+            </p>
 
-        <!-- PRICING SECTION -->
-        <section id="pricing">
-            <h2>Pricing</h2>
+            <div class="wireframe-grid">
 
-            <div class="pricing-cards">
-                <article>
-                    <h3>Free</h3>
-                    <p>Basic task management for individuals.</p>
+                <!-- MOBILE -->
+                <article class="wireframe">
+                    <h3>Mobile View</h3>
+                    <div class="wf-box">
+
+                        <div class="wf-row">
+                            <div class="wf-block">LOGO</div>
+                            <div class="wf-block">☰</div>
+                        </div>
+
+                        <div class="wf-hero">Hero Section (Headline + CTA)</div>
+
+                        <div class="wf-section-title">Features</div>
+                        <div class="wf-cards one">
+                            <div class="wf-card">Feature Card</div>
+                            <div class="wf-card">Feature Card</div>
+                            <div class="wf-card">Feature Card</div>
+                        </div>
+
+                        <div class="wf-section-title">Dashboard Preview</div>
+                        <div class="wf-card">App Screenshot</div>
+
+                        <div class="wf-section-title">Pricing</div>
+                        <div class="wf-card">Pricing Card</div>
+
+                        <div class="wf-footer">Footer</div>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Team</h3>
-                    <p>Collaboration tools for small teams.</p>
+                <!-- DESKTOP -->
+                <article class="wireframe">
+                    <h3>Desktop View</h3>
+                    <div class="wf-box">
+
+                        <div class="wf-row wide">
+                            <div class="wf-block">LOGO</div>
+                            <div class="wf-block">NAVIGATION LINKS</div>
+                        </div>
+
+                        <div class="wf-hero-split">
+                            <div class="wf-hero">Hero Text</div>
+                            <div class="wf-card">App Screenshot</div>
+                        </div>
+
+                        <div class="wf-section-title">Features</div>
+                        <div class="wf-cards three">
+                            <div class="wf-card">Feature</div>
+                            <div class="wf-card">Feature</div>
+                            <div class="wf-card">Feature</div>
+                        </div>
+
+                        <div class="wf-section-title">Pricing</div>
+                        <div class="wf-cards three">
+                            <div class="wf-card">Basic</div>
+                            <div class="wf-card">Pro</div>
+                            <div class="wf-card">Team</div>
+                        </div>
+
+                        <div class="wf-footer">Footer</div>
+                    </div>
                 </article>
+
             </div>
         </section>
 
-        <!-- CONTACT / SIGN-UP SECTION -->
-        <section id="contact">
-            <h2>Get in Touch</h2>
-
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-
-                <button type="submit">Sign Up</button>
-            </form>
-        </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; <span id="currentyear"></span> TaskFlow | All Rights Reserved</p>
-        <p id="lastModified"></p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 TaskFlow Site Plan</p>
+        </div>
     </footer>
+
 </body>
 
 </html>
