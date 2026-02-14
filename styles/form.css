@@ -31,7 +31,7 @@ form {
 }
 
 /* --- Alignment & Proximity --- */
-.form-section,
+.form-section,.rating-container
 fieldset {
     margin-bottom: 1.5rem;
     border: none;
@@ -69,7 +69,9 @@ input[type="checkbox"] {
 .rating-container label {
     display: inline-block;
     margin-right: 15px;
+    align-items: center;
     font-weight: normal;
+    cursor: pointer;
 }
 
 /* --- Contrast & Usability --- */
