@@ -74,6 +74,13 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+.checkbox-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
 /* --- Contrast & Usability --- */
 input[type="submit"] {
     background-color: var(--primary-color);
